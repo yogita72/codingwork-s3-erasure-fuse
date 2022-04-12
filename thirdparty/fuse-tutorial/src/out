@@ -1,0 +1,236 @@
+gcc -g -Wall `pkg-config fuse --cflags` -c bbfs.c
+Package fuse was not found in the pkg-config search path.
+Perhaps you should add the directory containing `fuse.pc'
+to the PKG_CONFIG_PATH environment variable
+No package 'fuse' found
+bbfs.c:24:18: error: fuse.h: No such file or directory
+In file included from bbfs.c:34:
+log.h:10: warning: ‘struct fuse_file_info’ declared inside parameter list
+log.h:10: warning: its scope is only this definition or declaration, which is probably not what you want
+log.h:12: warning: ‘struct statvfs’ declared inside parameter list
+log.h:13: warning: ‘struct utimbuf’ declared inside parameter list
+bbfs.c: In function ‘bb_fullpath’:
+bbfs.c:55: warning: implicit declaration of function ‘fuse_get_context’
+bbfs.c:55: error: invalid type argument of ‘->’ (have ‘int’)
+bbfs.c:60: error: invalid type argument of ‘->’ (have ‘int’)
+bbfs.c: In function ‘bb_getattr’:
+bbfs.c:83: warning: implicit declaration of function ‘lstat’
+bbfs.c: In function ‘bb_mknod’:
+bbfs.c:141: warning: implicit declaration of function ‘S_ISREG’
+bbfs.c:151: warning: implicit declaration of function ‘S_ISFIFO’
+bbfs.c:152: warning: implicit declaration of function ‘mkfifo’
+bbfs.c:156: warning: implicit declaration of function ‘mknod’
+bbfs.c: In function ‘bb_mkdir’:
+bbfs.c:174: warning: implicit declaration of function ‘mkdir’
+bbfs.c: In function ‘bb_chmod’:
+bbfs.c:284: warning: implicit declaration of function ‘chmod’
+bbfs.c: At top level:
+bbfs.c:328: warning: ‘struct utimbuf’ declared inside parameter list
+bbfs.c: In function ‘bb_utime’:
+bbfs.c:337: warning: implicit declaration of function ‘utime’
+bbfs.c: At top level:
+bbfs.c:354: warning: ‘struct fuse_file_info’ declared inside parameter list
+bbfs.c: In function ‘bb_open’:
+bbfs.c:364: error: dereferencing pointer to incomplete type
+bbfs.c:368: error: dereferencing pointer to incomplete type
+bbfs.c:369: warning: passing argument 1 of ‘log_fi’ from incompatible pointer type
+log.h:10: note: expected ‘struct fuse_file_info *’ but argument is of type ‘struct fuse_file_info *’
+bbfs.c: At top level:
+bbfs.c:390: warning: ‘struct fuse_file_info’ declared inside parameter list
+bbfs.c: In function ‘bb_read’:
+bbfs.c:397: warning: passing argument 1 of ‘log_fi’ from incompatible pointer type
+log.h:10: note: expected ‘struct fuse_file_info *’ but argument is of type ‘struct fuse_file_info *’
+bbfs.c:399: error: dereferencing pointer to incomplete type
+bbfs.c: At top level:
+bbfs.c:417: warning: ‘struct fuse_file_info’ declared inside parameter list
+bbfs.c: In function ‘bb_write’:
+bbfs.c:425: warning: passing argument 1 of ‘log_fi’ from incompatible pointer type
+log.h:10: note: expected ‘struct fuse_file_info *’ but argument is of type ‘struct fuse_file_info *’
+bbfs.c:427: error: dereferencing pointer to incomplete type
+bbfs.c: At top level:
+bbfs.c:441: warning: ‘struct statvfs’ declared inside parameter list
+bbfs.c: In function ‘bb_statfs’:
+bbfs.c:451: warning: implicit declaration of function ‘statvfs’
+bbfs.c:455: warning: passing argument 1 of ‘log_statvfs’ from incompatible pointer type
+log.h:12: note: expected ‘struct statvfs *’ but argument is of type ‘struct statvfs *’
+bbfs.c: At top level:
+bbfs.c:483: warning: ‘struct fuse_file_info’ declared inside parameter list
+bbfs.c: In function ‘bb_flush’:
+bbfs.c:489: warning: passing argument 1 of ‘log_fi’ from incompatible pointer type
+log.h:10: note: expected ‘struct fuse_file_info *’ but argument is of type ‘struct fuse_file_info *’
+bbfs.c: At top level:
+bbfs.c:508: warning: ‘struct fuse_file_info’ declared inside parameter list
+bbfs.c: In function ‘bb_release’:
+bbfs.c:514: warning: passing argument 1 of ‘log_fi’ from incompatible pointer type
+log.h:10: note: expected ‘struct fuse_file_info *’ but argument is of type ‘struct fuse_file_info *’
+bbfs.c:518: error: dereferencing pointer to incomplete type
+bbfs.c: At top level:
+bbfs.c:530: warning: ‘struct fuse_file_info’ declared inside parameter list
+bbfs.c: In function ‘bb_fsync’:
+bbfs.c:536: warning: passing argument 1 of ‘log_fi’ from incompatible pointer type
+log.h:10: note: expected ‘struct fuse_file_info *’ but argument is of type ‘struct fuse_file_info *’
+bbfs.c:539: error: dereferencing pointer to incomplete type
+bbfs.c:541: error: dereferencing pointer to incomplete type
+bbfs.c: At top level:
+bbfs.c:632: warning: ‘struct fuse_file_info’ declared inside parameter list
+bbfs.c: In function ‘bb_opendir’:
+bbfs.c:646: error: dereferencing pointer to incomplete type
+bbfs.c:648: warning: passing argument 1 of ‘log_fi’ from incompatible pointer type
+log.h:10: note: expected ‘struct fuse_file_info *’ but argument is of type ‘struct fuse_file_info *’
+bbfs.c: At top level:
+bbfs.c:674: error: expected declaration specifiers or ‘...’ before ‘fuse_fill_dir_t’
+bbfs.c:675: warning: ‘struct fuse_file_info’ declared inside parameter list
+bbfs.c: In function ‘bb_readdir’:
+bbfs.c:682: error: ‘filler’ undeclared (first use in this function)
+bbfs.c:682: error: (Each undeclared identifier is reported only once
+bbfs.c:682: error: for each function it appears in.)
+bbfs.c:684: error: ‘uintptr_t’ undeclared (first use in this function)
+bbfs.c:684: error: expected ‘;’ before ‘fi’
+bbfs.c:702: warning: implicit declaration of function ‘filler’
+bbfs.c:708: warning: passing argument 1 of ‘log_fi’ from incompatible pointer type
+log.h:10: note: expected ‘struct fuse_file_info *’ but argument is of type ‘struct fuse_file_info *’
+bbfs.c: At top level:
+bbfs.c:717: warning: ‘struct fuse_file_info’ declared inside parameter list
+bbfs.c: In function ‘bb_releasedir’:
+bbfs.c:723: warning: passing argument 1 of ‘log_fi’ from incompatible pointer type
+log.h:10: note: expected ‘struct fuse_file_info *’ but argument is of type ‘struct fuse_file_info *’
+bbfs.c:725: error: ‘uintptr_t’ undeclared (first use in this function)
+bbfs.c:725: error: expected ‘)’ before ‘fi’
+bbfs.c: At top level:
+bbfs.c:739: warning: ‘struct fuse_file_info’ declared inside parameter list
+bbfs.c: In function ‘bb_fsyncdir’:
+bbfs.c:745: warning: passing argument 1 of ‘log_fi’ from incompatible pointer type
+log.h:10: note: expected ‘struct fuse_file_info *’ but argument is of type ‘struct fuse_file_info *’
+bbfs.c: At top level:
+bbfs.c:767: warning: ‘struct fuse_conn_info’ declared inside parameter list
+bbfs.c: In function ‘bb_init’:
+bbfs.c:772: error: invalid type argument of ‘->’ (have ‘int’)
+bbfs.c: At top level:
+bbfs.c:827: warning: ‘struct fuse_file_info’ declared inside parameter list
+bbfs.c: In function ‘bb_create’:
+bbfs.c:841: error: dereferencing pointer to incomplete type
+bbfs.c:843: warning: passing argument 1 of ‘log_fi’ from incompatible pointer type
+log.h:10: note: expected ‘struct fuse_file_info *’ but argument is of type ‘struct fuse_file_info *’
+bbfs.c: At top level:
+bbfs.c:860: warning: ‘struct fuse_file_info’ declared inside parameter list
+bbfs.c: In function ‘bb_ftruncate’:
+bbfs.c:866: warning: passing argument 1 of ‘log_fi’ from incompatible pointer type
+log.h:10: note: expected ‘struct fuse_file_info *’ but argument is of type ‘struct fuse_file_info *’
+bbfs.c:868: error: dereferencing pointer to incomplete type
+bbfs.c: At top level:
+bbfs.c:890: warning: ‘struct fuse_file_info’ declared inside parameter list
+bbfs.c: In function ‘bb_fgetattr’:
+bbfs.c:896: warning: passing argument 1 of ‘log_fi’ from incompatible pointer type
+log.h:10: note: expected ‘struct fuse_file_info *’ but argument is of type ‘struct fuse_file_info *’
+bbfs.c:898: warning: implicit declaration of function ‘fstat’
+bbfs.c:898: error: dereferencing pointer to incomplete type
+bbfs.c: At top level:
+bbfs.c:907: error: variable ‘bb_oper’ has initializer but incomplete type
+bbfs.c:908: error: unknown field ‘getattr’ specified in initializer
+bbfs.c:908: warning: excess elements in struct initializer
+bbfs.c:908: warning: (near initialization for ‘bb_oper’)
+bbfs.c:909: error: unknown field ‘readlink’ specified in initializer
+bbfs.c:909: warning: excess elements in struct initializer
+bbfs.c:909: warning: (near initialization for ‘bb_oper’)
+bbfs.c:911: error: unknown field ‘getdir’ specified in initializer
+bbfs.c:911: warning: excess elements in struct initializer
+bbfs.c:911: warning: (near initialization for ‘bb_oper’)
+bbfs.c:912: error: unknown field ‘mknod’ specified in initializer
+bbfs.c:912: warning: excess elements in struct initializer
+bbfs.c:912: warning: (near initialization for ‘bb_oper’)
+bbfs.c:913: error: unknown field ‘mkdir’ specified in initializer
+bbfs.c:913: warning: excess elements in struct initializer
+bbfs.c:913: warning: (near initialization for ‘bb_oper’)
+bbfs.c:914: error: unknown field ‘unlink’ specified in initializer
+bbfs.c:914: warning: excess elements in struct initializer
+bbfs.c:914: warning: (near initialization for ‘bb_oper’)
+bbfs.c:915: error: unknown field ‘rmdir’ specified in initializer
+bbfs.c:915: warning: excess elements in struct initializer
+bbfs.c:915: warning: (near initialization for ‘bb_oper’)
+bbfs.c:916: error: unknown field ‘symlink’ specified in initializer
+bbfs.c:916: warning: excess elements in struct initializer
+bbfs.c:916: warning: (near initialization for ‘bb_oper’)
+bbfs.c:917: error: unknown field ‘rename’ specified in initializer
+bbfs.c:917: warning: excess elements in struct initializer
+bbfs.c:917: warning: (near initialization for ‘bb_oper’)
+bbfs.c:918: error: unknown field ‘link’ specified in initializer
+bbfs.c:918: warning: excess elements in struct initializer
+bbfs.c:918: warning: (near initialization for ‘bb_oper’)
+bbfs.c:919: error: unknown field ‘chmod’ specified in initializer
+bbfs.c:919: warning: excess elements in struct initializer
+bbfs.c:919: warning: (near initialization for ‘bb_oper’)
+bbfs.c:920: error: unknown field ‘chown’ specified in initializer
+bbfs.c:920: warning: excess elements in struct initializer
+bbfs.c:920: warning: (near initialization for ‘bb_oper’)
+bbfs.c:921: error: unknown field ‘truncate’ specified in initializer
+bbfs.c:921: warning: excess elements in struct initializer
+bbfs.c:921: warning: (near initialization for ‘bb_oper’)
+bbfs.c:922: error: unknown field ‘utime’ specified in initializer
+bbfs.c:922: warning: excess elements in struct initializer
+bbfs.c:922: warning: (near initialization for ‘bb_oper’)
+bbfs.c:923: error: unknown field ‘open’ specified in initializer
+bbfs.c:923: warning: excess elements in struct initializer
+bbfs.c:923: warning: (near initialization for ‘bb_oper’)
+bbfs.c:924: error: unknown field ‘read’ specified in initializer
+bbfs.c:924: warning: excess elements in struct initializer
+bbfs.c:924: warning: (near initialization for ‘bb_oper’)
+bbfs.c:925: error: unknown field ‘write’ specified in initializer
+bbfs.c:925: warning: excess elements in struct initializer
+bbfs.c:925: warning: (near initialization for ‘bb_oper’)
+bbfs.c:927: error: unknown field ‘statfs’ specified in initializer
+bbfs.c:927: warning: excess elements in struct initializer
+bbfs.c:927: warning: (near initialization for ‘bb_oper’)
+bbfs.c:928: error: unknown field ‘flush’ specified in initializer
+bbfs.c:928: warning: excess elements in struct initializer
+bbfs.c:928: warning: (near initialization for ‘bb_oper’)
+bbfs.c:929: error: unknown field ‘release’ specified in initializer
+bbfs.c:929: warning: excess elements in struct initializer
+bbfs.c:929: warning: (near initialization for ‘bb_oper’)
+bbfs.c:930: error: unknown field ‘fsync’ specified in initializer
+bbfs.c:930: warning: excess elements in struct initializer
+bbfs.c:930: warning: (near initialization for ‘bb_oper’)
+bbfs.c:931: error: unknown field ‘setxattr’ specified in initializer
+bbfs.c:931: warning: excess elements in struct initializer
+bbfs.c:931: warning: (near initialization for ‘bb_oper’)
+bbfs.c:932: error: unknown field ‘getxattr’ specified in initializer
+bbfs.c:932: warning: excess elements in struct initializer
+bbfs.c:932: warning: (near initialization for ‘bb_oper’)
+bbfs.c:933: error: unknown field ‘listxattr’ specified in initializer
+bbfs.c:933: warning: excess elements in struct initializer
+bbfs.c:933: warning: (near initialization for ‘bb_oper’)
+bbfs.c:934: error: unknown field ‘removexattr’ specified in initializer
+bbfs.c:934: warning: excess elements in struct initializer
+bbfs.c:934: warning: (near initialization for ‘bb_oper’)
+bbfs.c:935: error: unknown field ‘opendir’ specified in initializer
+bbfs.c:935: warning: excess elements in struct initializer
+bbfs.c:935: warning: (near initialization for ‘bb_oper’)
+bbfs.c:936: error: unknown field ‘readdir’ specified in initializer
+bbfs.c:936: warning: excess elements in struct initializer
+bbfs.c:936: warning: (near initialization for ‘bb_oper’)
+bbfs.c:937: error: unknown field ‘releasedir’ specified in initializer
+bbfs.c:937: warning: excess elements in struct initializer
+bbfs.c:937: warning: (near initialization for ‘bb_oper’)
+bbfs.c:938: error: unknown field ‘fsyncdir’ specified in initializer
+bbfs.c:938: warning: excess elements in struct initializer
+bbfs.c:938: warning: (near initialization for ‘bb_oper’)
+bbfs.c:939: error: unknown field ‘init’ specified in initializer
+bbfs.c:939: warning: excess elements in struct initializer
+bbfs.c:939: warning: (near initialization for ‘bb_oper’)
+bbfs.c:940: error: unknown field ‘destroy’ specified in initializer
+bbfs.c:940: warning: excess elements in struct initializer
+bbfs.c:940: warning: (near initialization for ‘bb_oper’)
+bbfs.c:941: error: unknown field ‘access’ specified in initializer
+bbfs.c:941: warning: excess elements in struct initializer
+bbfs.c:941: warning: (near initialization for ‘bb_oper’)
+bbfs.c:942: error: unknown field ‘create’ specified in initializer
+bbfs.c:942: warning: excess elements in struct initializer
+bbfs.c:942: warning: (near initialization for ‘bb_oper’)
+bbfs.c:943: error: unknown field ‘ftruncate’ specified in initializer
+bbfs.c:943: warning: excess elements in struct initializer
+bbfs.c:943: warning: (near initialization for ‘bb_oper’)
+bbfs.c:944: error: unknown field ‘fgetattr’ specified in initializer
+bbfs.c:945: warning: excess elements in struct initializer
+bbfs.c:945: warning: (near initialization for ‘bb_oper’)
+bbfs.c: In function ‘main’:
+bbfs.c:999: warning: implicit declaration of function ‘fuse_main’
+make: *** [bbfs.o] Error 1

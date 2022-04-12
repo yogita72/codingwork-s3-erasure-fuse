@@ -1,0 +1,45 @@
+Wayback User-level versioned file system for Linux
+
+Copyright 2004 by Brian Cornell
+
+This program is distributed under the Gnu GPL. For information about copying
+and distributing this program, see the file COPYING.
+
+Installation:
+-------------
+
+Installing Wayback should be as easy as typing
+  make
+and then (as root)
+  make install
+
+If there are errors in the make process, first try to get FUSE to install
+properly (see INSTALL in the fuse-1.1 directory). You will need a kernel source
+tree that represents your current kernel.
+
+Usage:
+------
+
+To mount a directory with versioning support type the command
+	mount.wayback <source> <dest>
+where <source> is the directory where files are actually stored and <dest> is
+the directory where files will be accesed with versioning.
+
+To unmount a versioned directory simply type
+	umount <dest>
+where <dest> is the directory where the files are accessed as above.
+
+Known Limitations:
+------------------
+There are some known limitations to Wayback and the FUSE interface it uses:
+ - Changing things in directories where versioning has been used without using
+   versioning may cause version data to become corrupt. If a directory is to
+   be used with versioning, never use it without versioning.
+ - Version files can become very large if you use programs that truncate and
+   then rewrite entire files.
+
+Contact Info:
+-------------
+
+For up-to-date information see http://wayback.sf.net or send an email to
+techie@northwestern.edu.

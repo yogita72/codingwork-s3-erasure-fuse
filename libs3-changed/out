@@ -1,0 +1,78 @@
+build/obj/s3_fuse_bridge.o: Compiling object
+In file included from src/s3_fuse_bridge.c:14:
+inc/log.h:10: warning: ‘struct fuse_file_info’ declared inside parameter list
+inc/log.h:10: warning: its scope is only this definition or declaration, which is probably not what you want
+inc/log.h:12: warning: ‘struct statvfs’ declared inside parameter list
+inc/log.h:13: warning: ‘struct utimbuf’ declared inside parameter list
+src/s3_fuse_bridge.c: In function ‘searchForPath’:
+src/s3_fuse_bridge.c:149: warning: implicit declaration of function ‘strdup’
+src/s3_fuse_bridge.c:149: warning: incompatible implicit declaration of built-in function ‘strdup’
+src/s3_fuse_bridge.c: In function ‘getPathFromS3’:
+src/s3_fuse_bridge.c:193: warning: incompatible implicit declaration of built-in function ‘strdup’
+src/s3_fuse_bridge.c: In function ‘insertS3NodesInTree’:
+src/s3_fuse_bridge.c:253: warning: incompatible implicit declaration of built-in function ‘strdup’
+src/s3_fuse_bridge.c:297: warning: incompatible implicit declaration of built-in function ‘strdup’
+src/s3_fuse_bridge.c:368: warning: implicit declaration of function ‘isNodeMetaFile’
+src/s3_fuse_bridge.c:371: warning: implicit declaration of function ‘buildPathToMeta’
+src/s3_fuse_bridge.c: In function ‘isNodeMetaFile’:
+src/s3_fuse_bridge.c:402: warning: incompatible implicit declaration of built-in function ‘strdup’
+src/s3_fuse_bridge.c:416: warning: label ‘ret’ defined but not used
+src/s3_fuse_bridge.c: In function ‘buildPathToMeta’:
+src/s3_fuse_bridge.c:433: warning: incompatible implicit declaration of built-in function ‘strdup’
+src/s3_fuse_bridge.c: In function ‘searchNode’:
+src/s3_fuse_bridge.c:512: warning: incompatible implicit declaration of built-in function ‘strdup’
+src/s3_fuse_bridge.c: In function ‘getPathForNode’:
+src/s3_fuse_bridge.c:604: warning: incompatible implicit declaration of built-in function ‘strdup’
+src/s3_fuse_bridge.c:616: warning: incompatible implicit declaration of built-in function ‘strdup’
+src/s3_fuse_bridge.c: In function ‘fixEncodedFileInfo’:
+src/s3_fuse_bridge.c:645: warning: incompatible implicit declaration of built-in function ‘strdup’
+src/s3_fuse_bridge.c:642: warning: unused variable ‘inCache’
+src/s3_fuse_bridge.c: In function ‘updateDirTree’:
+src/s3_fuse_bridge.c:725: warning: incompatible implicit declaration of built-in function ‘strdup’
+src/s3_fuse_bridge.c: In function ‘addDirectory’:
+src/s3_fuse_bridge.c:775: warning: incompatible implicit declaration of built-in function ‘strdup’
+src/s3_fuse_bridge.c: In function ‘deletePath’:
+src/s3_fuse_bridge.c:807: warning: comparison between pointer and integer
+src/s3_fuse_bridge.c:818: warning: comparison between pointer and integer
+src/s3_fuse_bridge.c: In function ‘deleteThroughS3’:
+src/s3_fuse_bridge.c:953: warning: incompatible implicit declaration of built-in function ‘strdup’
+src/s3_fuse_bridge.c: In function ‘deleteObjectFromS3’:
+src/s3_fuse_bridge.c:1006: warning: incompatible implicit declaration of built-in function ‘strdup’
+src/s3_fuse_bridge.c: In function ‘deleteBucketFromS3’:
+src/s3_fuse_bridge.c:1039: warning: incompatible implicit declaration of built-in function ‘strdup’
+src/s3_fuse_bridge.c:1041: warning: implicit declaration of function ‘delete_bucket’
+src/s3_fuse_bridge.c: In function ‘populateVersions’:
+src/s3_fuse_bridge.c:1065: warning: incompatible implicit declaration of built-in function ‘strdup’
+src/s3_fuse_bridge.c: In function ‘populateVersioningInfo’:
+src/s3_fuse_bridge.c:1144: warning: incompatible implicit declaration of built-in function ‘strdup’
+src/s3_fuse_bridge.c: In function ‘insertVersionNodes’:
+src/s3_fuse_bridge.c:1199: warning: incompatible implicit declaration of built-in function ‘strdup’
+src/s3_fuse_bridge.c: In function ‘getVersionsFromS3’:
+src/s3_fuse_bridge.c:1331: warning: incompatible implicit declaration of built-in function ‘strdup’
+src/s3_fuse_bridge.c: In function ‘prepareForInsertingVersions’:
+src/s3_fuse_bridge.c:1376: warning: incompatible implicit declaration of built-in function ‘strdup’
+src/s3_fuse_bridge.c: In function ‘processVersionsList’:
+src/s3_fuse_bridge.c:1444: warning: incompatible implicit declaration of built-in function ‘strdup’
+src/s3_fuse_bridge.c:1410: warning: unused parameter ‘childPath’
+src/s3_fuse_bridge.c: In function ‘s3CacheMarkForFlush’:
+src/s3_fuse_bridge.c:1566: warning: incompatible implicit declaration of built-in function ‘strdup’
+src/s3_fuse_bridge.c: In function ‘s3CacheFetch’:
+src/s3_fuse_bridge.c:1588: warning: incompatible implicit declaration of built-in function ‘strdup’
+src/s3_fuse_bridge.c:1579: warning: unused variable ‘tmp1’
+src/s3_fuse_bridge.c: In function ‘s3CacheFlushCache’:
+src/s3_fuse_bridge.c:1734: warning: incompatible implicit declaration of built-in function ‘strdup’
+src/s3_fuse_bridge.c: In function ‘deleteChildren’:
+src/s3_fuse_bridge.c:850: warning: control reaches end of non-void function
+build/obj/s3_erasure_code.o: Compiling object
+In file included from src/s3_erasure_code.c:15:
+inc/log.h:10: warning: ‘struct fuse_file_info’ declared inside parameter list
+inc/log.h:10: warning: its scope is only this definition or declaration, which is probably not what you want
+inc/log.h:12: warning: ‘struct statvfs’ declared inside parameter list
+inc/log.h:13: warning: ‘struct utimbuf’ declared inside parameter list
+src/s3_erasure_code.c: In function ‘getObjectAndDecode’:
+src/s3_erasure_code.c:140: warning: implicit declaration of function ‘strdup’
+src/s3_erasure_code.c:140: warning: incompatible implicit declaration of built-in function ‘strdup’
+src/s3_erasure_code.c: In function ‘encodeObjectAndPut’:
+src/s3_erasure_code.c:206: warning: incompatible implicit declaration of built-in function ‘strdup’
+build/obj/log.o: Compiling object
+build/bin/s3fs: Building executable
