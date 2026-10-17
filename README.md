@@ -1,0 +1,1 @@
+add FUSE layer on top of libs3 and save data erasure coded. Used Jerasure library for erasure coding. Used third party tutorial for adding FUSE layer. Also, added S3 versioning support to S3 client, third party libs3. Also, added temporary caching for S3 objects.
